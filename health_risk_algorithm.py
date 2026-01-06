@@ -10,7 +10,7 @@ def analyze_health_data(health_values, threshold):
             continue
         total_value += value
 
-        if value >= threshold:
+        if value > threshold:
             risk_count += 1
 
     average_value = total_value / len(health_values)
