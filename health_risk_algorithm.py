@@ -5,7 +5,7 @@ def analyze_health_data(health_values, threshold):
     risk_count = 0
     total_value = 0
 
-    for value in health_values:
+    for value in health_values[:5]:
         if value < 0 or value > 200:
             continue
         total_value += value
