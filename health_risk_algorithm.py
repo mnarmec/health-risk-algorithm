@@ -15,7 +15,7 @@ def analyze_health_data(health_values, threshold):
 
     average_value = total_value / len(health_values)
 
-    if risk_count >= 3:
+    if risk_count >=3:
         return "High Risk"
     elif average_value > threshold:
         return "Medium Risk"
